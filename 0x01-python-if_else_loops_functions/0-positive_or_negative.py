@@ -1,14 +1,14 @@
 #!/usr/bin/python3
 import random
 
-num = random.randint(-10000, 10000)
+number = random.randint(-10000, 10000)
 msg = ''
 
-if num > 0:
+if number > 0:
     msg = 'positive'
-elif num == 0:
+elif number == 0:
     msg = "zero"
 else:
     msg = 'negative'
 
-print(f'{num} is {msg}')
+print(f'{number} is {msg}')
