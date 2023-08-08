@@ -9,5 +9,3 @@ def fizzbuzz():
         if output == "":
             output = num
         print("{}".format(output), end=" ")
-
-fizzbuzz()
