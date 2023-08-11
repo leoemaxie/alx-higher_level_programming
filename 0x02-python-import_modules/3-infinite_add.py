@@ -9,7 +9,5 @@ if __name__ == "__main__":
     for i in range(1, args_len):
         sum += int(sys.argv[i])
 
-    if args_len > 1:
-        print("{}".format(sum))
-
+    print("{}".format(sum))
     sys.exit(0)
