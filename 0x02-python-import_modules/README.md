@@ -1,7 +1,11 @@
 # Pyython - Import & Module
 
 ## Overview
-* Python - Import & Modules: A deep dive into importing and using modules to create reusable programs.
+A deep dive into importing and using modules to create reusable programs, and controlling the execution of imports using:
+```python
+if __name__ == "__main__":
+    # Do something...
+```
 
 As usual, files prefixed in the tens and units e.g `2-args.py` are basic tasks while those prefixed in the hundreds e.g `101-easy_print.py` are advanced tasks.
 
