@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 def new_in_list(my_list, idx, element):
-    """Replaces an element of a list at a specific position"""
+    """Creates a new list from my_list with the element of my_list replaced at a specific position"""
     if idx < 0 or idx >= len(my_list):
         return my_list
 
