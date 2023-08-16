@@ -4,7 +4,7 @@ def best_score(a_dictionary):
     if not a_dictionary:
         return None
 
-    max = 0, max_key = ""
+    max, max_key = (float("-inf"), "")
     for key, value in a_dictionary.items():
         if value > max:
             max_key = key
