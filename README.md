@@ -13,6 +13,6 @@ A series of tasks and exercises aimed at understanding Python.
 * Data Structures - List, Tuples: A series of programs to understand Python's data structures and when to use them. This is housed in the [0x03-python-data_structures](/0x03-python-data_structures) directory.
 
 
-
+* More Data Structures - Set, Dictionary: A deeper dive int0 Python's data structure. This is housed in the [0x04-python-more_data_structures](/0x04-python-more_data_structures) directory.
 
 
