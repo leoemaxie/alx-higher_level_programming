@@ -2,8 +2,7 @@
 def safe_print_integer(value):
     """prints an integer with "{:d}".format()."""
     try:
-        value / 10
         print("{:d}".format(value))
         return True
-    except TypeError:
+    except ValueError:
         return False
