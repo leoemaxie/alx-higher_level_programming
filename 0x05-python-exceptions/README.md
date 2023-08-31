@@ -1,4 +1,4 @@
-# Pyython - Exceptions
+# Python - Exceptions
 
 ## Overview
 A deep dive into handling errors that occurs when executing a python program.

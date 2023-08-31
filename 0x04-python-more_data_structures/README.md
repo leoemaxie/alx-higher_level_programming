@@ -1,4 +1,4 @@
-# Pyython - More Data Structures: Sets, Dictionary
+# Python - More Data Structures: Sets, Dictionary
 
 ## Overview
 A series of programs to understand Python's data structures and when to use them. Operations and methods on Sets and Dictionaries are also covered in this repo as well as advanced operations on Lists and Tuples.

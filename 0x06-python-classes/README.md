@@ -1,4 +1,4 @@
-# Pyython - Classes and Objects
+# Python - Classes and Objects
 
 ## Overview
 Introduction to Object Oriented Programming in Python.

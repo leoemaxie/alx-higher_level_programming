@@ -1,4 +1,4 @@
-# Pyython - Import & Module
+# Python - Import & Module
 
 ## Overview
 A deep dive into importing and using modules to create reusable programs, and controlling the execution of imports using:

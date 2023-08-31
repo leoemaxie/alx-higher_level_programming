@@ -17,3 +17,5 @@ A series of tasks and exercises aimed at understanding Python.
 * Exceptions: A deep dive into handling errors that occurs when executing a python program. This is housed in the [0x05-python-exceptions](/0x05-python-exceptions) directory.
 
 * Classes and Objects: Introduction to Object Oriented Programming in Python. This is housed in the [0x06-python-classes](/0x06-python-classes) directory.
+
+* Test-driven Development: Writing tests and testing in Python. This is housed in the [0x07-python-test_driven_development](/0x07-python-test_driven_development) directory.

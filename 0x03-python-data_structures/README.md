@@ -1,4 +1,4 @@
-# Pyython - Data Structures: Lists, Tuples
+# Python - Data Structures: Lists, Tuples
 
 ## Overview
 A series of programs to understand Python's data structures and when to use them. Operations and methods on Lists and Tuples are covered in this repo.
