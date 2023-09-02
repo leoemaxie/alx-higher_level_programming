@@ -1,17 +1,31 @@
 #!/usr/bin/python3
-"""Square Moduule: Defines a Square class with a private variable {size} and
-handles Exceptions
-"""
+"""Matrix Divided Module: Defines an addition {matrix_divided} function"""
 
 
-class Square:
-    """A square class with defined size. Raises an Exceptions if {size} doesn't
-    meet the criteria
+def matrix_divided(matrix, div):
     """
-    def __init__(self, size=0):
-        if not isinstance(size, int):
-            raise TypeError("size must be an integer")
-        elif size < 0:
-            raise ValueError("size must be >= 0")
+    This function divides all elements of a matrix.
+
+    :param matrix: A list of lists of integers or floats
+    :param div: A number (integer or float),
+    A TypeError Exception is raised if any of the arguments violate this type.
+
+    :return: a new matrix
+    :rtype list
+    """
+    if isinstance(a, bool) or isinstance(b, bool):
+        raise TypeError("a must be an integer")
+
+    if not isinstance(a, int):
+        if isinstance(a, float):
+            a = int(a)
         else:
-            self.__size = size
+            raise TypeError("a must be an integer")
+
+    if not isinstance(b, int):
+        if isinstance(b, float):
+            b = int(b)
+        else:
+            raise TypeError("b must be an integer")
+
+    return a + b
