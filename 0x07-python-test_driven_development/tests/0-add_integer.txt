@@ -1,7 +1,102 @@
-#!/usr/bin/python3
-"""Square Moduule: Defines a Square class"""
+from ``0-add_integer`` module
+=============================
 
+Using ``add_integer``
+---------------------
 
-class Square:
-    """An empty square class"""
-    pass
+This is an example text file in reStructuredText format.
+
+Importing ``add_integer`` from ``0-add_integer`` module:
+    >>> add_integer = __import__("0-add_integer").add_integer
+
+Testing for the presence of docstrings in the module:
+    >>> m_doc = __import__("0-add_integer").__doc__
+	>>> len(m_doc) > 1
+	True
+
+Testing for the presence of docstrings in ``add_integer`` function:
+    >>> f_doc = add_integer.__doc__
+	>>> len(f_doc) > 1
+	True
+
+Testing for regular addition:
+	>>> add_integer(15, 10)
+	25
+
+Testing with one argument:
+	>>> add_integer(2)
+	100
+
+Testing with the first argument of type float:
+	>>> add_integer(15.8, 5)
+	20
+
+Testing with the second argument of type float:
+	>>> add_integer(18, 5.5)
+	23
+
+Testing both arguments of type float:
+	>>> add_integer(18.5, 5.5)
+	23
+
+Testing both arguments with negative numbers:
+	>>> add_integer(18.5, -1)
+	17
+
+Testing with a long number:
+	>>> add_integer(999999999999999, 1)
+	1000000000000000
+
+Testing with type bool:
+	>>> add_integer(False)
+	Traceback (most recent call last):
+        ...
+	TypeError: a must be an integer
+
+Testing with NaN:
+	>>> add_integer(19.3, float("nan"))
+	Traceback (most recent call last):
+        ...
+	ValueError: cannot convert float NaN to integer
+
+Testing with type infinity:
+	>>> add_integer(float("inf"))
+	Traceback (most recent call last):
+        ...
+	OverflowError: cannot convert float infinity to integer
+
+Testing with type -infinity:
+	>>> add_integer(float("-inf"))
+	Traceback (most recent call last):
+        ...
+	OverflowError: cannot convert float infinity to integer
+
+Testing with type list:
+	>>> add_integer([18, 19, 20, 21, 22, 23])
+	Traceback (most recent call last):
+        ...
+	TypeError: a must be an integer
+	
+Testing with only the first argument of type str:
+	>>> add_integer("23")
+	Traceback (most recent call last):
+        ...
+	TypeError: a must be an integer
+
+Testing with two arguments, the second argument is of type str:
+	>>> add_integer(99, "23")
+	Traceback (most recent call last):
+        ...
+	TypeError: b must be an integer
+	
+Testing with no argument:
+	>>> add_integer()
+	Traceback (most recent call last):
+        ...
+	TypeError: add_integer() missing 1 required positional argument: 'a'
+
+Testing with more than two arguments:
+	>>> add_integer(5, 6, [88, 90])
+	Traceback (most recent call last):
+        ...
+	TypeError: add_integer() takes from 1 to 2 positional arguments but 3 were given
