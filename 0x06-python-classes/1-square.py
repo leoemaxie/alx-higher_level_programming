@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Square Moduule: Defines a Square class with a private variable {size}"""
+"""Square Module: Defines a Square class with a private variable {size}"""
 
 
 class Square:
