@@ -1,11 +1,17 @@
 #!/usr/bin/python3
-"""Addition Moduule: Defines an addition {add_integer} function"""
+"""Addition Module: Defines an addition {add_integer} function"""
 
 
 def add_integer(a, b=98):
-    """Adds two integers
+    """
+    This functions adds two integers
 
-       Return: addition of a and b
+    :param a: The first number to add which can only be an int or a float
+    :param b: The second number to add which can only be an int or a float
+    A TypeError Exception is raised if the arguments violate this type.
+
+    :return: sum of a and b
+    :rtype int
     """
     if isinstance(a, bool) or isinstance(b, bool):
         raise TypeError("a must be an integer")
