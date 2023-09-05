@@ -13,6 +13,21 @@ def throw_error(value, prop):
         raise ValueError(f"{prop} must be >= 0")
 
 
+def str_rectangle(width, height):
+    """
+    Returns a string of # character based on a Rectangle's width and height.
+    """
+    if width == 0 or height == 0:
+        return ""
+    rectangle = ""
+    for row in range(height):
+        for col in range(width):
+            rectangle += '#'
+        if row < height - 1:
+            rectangle += '\n'
+    return rectangle
+
+
 class Rectangle:
     """
     A Rectangle class with defined width and height. Raises an Exceptions
@@ -52,5 +67,12 @@ class Rectangle:
 
     """Calculates the perimeter of the Rectangle"""
     def perimeter(self):
+        if self.__width == 0 or self.__height == 0:
+            return 0
         return (self.__width + self.__height) * 2
 
+    """
+    Returns a string of # character based on a Rectangle's width and height.
+    """
+    def __str__(self):
+        return str_rectangle(self.__width, self.__height)
