@@ -21,3 +21,5 @@ A series of tasks and exercises aimed at understanding Python.
 * Test-driven Development: Writing tests and testing in Python. This is housed in the [0x07-python-test_driven_development](/0x07-python-test_driven_development) directory.
 
 * M0re Classes and Objects: A deeper dive to Object Oriented Programming in Python. This is housed in the [0x08-python-more_classes](/0x08-python-more_classes) directory.
+
+* Everything is Object: Theorectical questions to Object Oriented Programming in Python. This is housed in the [0x09-python-everything_is_object](/0x09-python-everything_is_object) directory.
