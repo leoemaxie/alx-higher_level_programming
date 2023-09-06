@@ -86,7 +86,7 @@ Testing with list:
 	TypeError: a must be an integer
 	
 Testing with dict:
-	>>> add_integer({'name': 'Jade', age: 22, 'isOnline': True})
+	>>> add_integer({'name': 'Jade', 'age': 22, 'isOnline': True})
 	Traceback (most recent call last):
         ...
 	TypeError: a must be an integer

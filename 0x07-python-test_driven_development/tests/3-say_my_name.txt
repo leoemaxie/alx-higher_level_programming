@@ -1,116 +1,106 @@
-from ``0-add_integer`` module
+from ``3-say_my_name`` module
 =============================
 
-Using ``add_integer``
+Using ``say_my_name``
 ---------------------
 
-This is an example text file in reStructuredText format.
+This is a text file in reStructuredText format.
 
-Importing ``add_integer`` from ``0-add_integer`` module:
-    >>> add_integer = __import__("0-add_integer").add_integer
+Importing ``say_my_name`` from ``3-say_my_name`` module:
+    >>> say_my_name = __import__("3-say_my_name").say_my_name
 
 Testing for the presence of docstrings in the module:
-    >>> m_doc = __import__("0-add_integer").__doc__
+    >>> m_doc = __import__("3-say_my_name").__doc__
 	>>> len(m_doc) > 1
 	True
 
-Testing for the presence of docstrings in ``add_integer`` function:
-    >>> f_doc = add_integer.__doc__
+Testing for the presence of docstrings in ``say_my_name`` function:
+    >>> f_doc = say_my_name.__doc__
 	>>> len(f_doc) > 1
 	True
 
-Testing for regular addition:
-	>>> add_integer(15, 10)
-	25
+Testing both arguments of type string:
+	>>> say_my_name("John", "Smith")
+	My name is John Smith
 
 Testing with one argument:
-	>>> add_integer(2)
-	100
+	>>> say_my_name("John")
+	My name is John 
 
 Testing the first argument of type float:
-	>>> add_integer(15.8, 5)
-	20
+	>>> say_my_name(15.5, "John")
+	Traceback (most recent call last):
+        ...
+	TypeError: first_name must be a string
 
 Testing the second argument of type float:
-	>>> add_integer(18, 5.5)
-	23
-
-Testing both arguments of type float:
-	>>> add_integer(18.5, 5.5)
-	23
-
-Testing first argument with negative number:
-	>>> add_integer(18.5, -1)
-	17
-
-Testing second argument with negative number:
-	>>> add_integer(-1, 18.5)
-	17
+	>>> say_my_name("John", 15.5)
+	Traceback (most recent call last):
+        ...
+	TypeError: last_name must be a string
 
 Testing both arguments with negative numbers:
-	>>> add_integer(-18.5, -1)
-	-19
+	>>> say_my_name(-18.5, -1)
+	Traceback (most recent call last):
+        ...
+	TypeError: first_name must be a string
 
-Testing with a long number:
-	>>> add_integer(999999999999999, 1)
-	1000000000000000
+Testing the first argument with None:
+	>>> say_my_name(None)
+	Traceback (most recent call last):
+        ...
+	TypeError: first_name must be a string
+
+Testing the second argument with None:
+	>>> say_my_name("James", None)
+	Traceback (most recent call last):
+        ...
+	TypeError: last_name must be a string
 
 Testing with type bool:
-	>>> add_integer(False)
+	>>> say_my_name("John", True)
 	Traceback (most recent call last):
         ...
-	TypeError: a must be an integer
+	TypeError: last_name must be a string
 
 Testing with NaN:
-	>>> add_integer(19.3, float("nan"))
+	>>> say_my_name(float("nan"))
 	Traceback (most recent call last):
         ...
-	ValueError: cannot convert float NaN to integer
+	TypeError: first_name must be a string
 
 Testing with infinity:
-	>>> add_integer(float("inf"))
+	>>> say_my_name(float("inf"))
 	Traceback (most recent call last):
         ...
-	OverflowError: cannot convert float infinity to integer
+	TypeError: first_name must be a string
 
 Testing with -infinity:
-	>>> add_integer(float("-inf"))
+	>>> say_my_name(float("-inf"))
 	Traceback (most recent call last):
         ...
-	OverflowError: cannot convert float infinity to integer
+	TypeError: first_name must be a string
 
 Testing with list:
-	>>> add_integer([18, 19, 20, 21, 22, 23])
+	>>> say_my_name([18, 19, 20, 21, 22, 23])
 	Traceback (most recent call last):
         ...
-	TypeError: a must be an integer
+	TypeError: first_name must be a string
 	
 Testing with dict:
-	>>> add_integer({'name': 'Jade', age: 22, 'isOnline': True})
+	>>> say_my_name("David", {'name': 'Jade', 'age': 22, 'isOnline': True})
 	Traceback (most recent call last):
         ...
-	TypeError: a must be an integer
-
-Testing only the first argument of type str:
-	>>> add_integer("23")
-	Traceback (most recent call last):
-        ...
-	TypeError: a must be an integer
-
-Testing with two arguments, the second argument is of type str:
-	>>> add_integer(99, "23")
-	Traceback (most recent call last):
-        ...
-	TypeError: b must be an integer
+	TypeError: last_name must be a string
 	
 Testing with no argument:
-	>>> add_integer()
+	>>> say_my_name()
 	Traceback (most recent call last):
         ...
-	TypeError: add_integer() missing 1 required positional argument: 'a'
+	TypeError: say_my_name() missing 1 required positional argument: 'first_name'
 
 Testing with more than two arguments:
-	>>> add_integer(5, 6, [88, 90])
+	>>> say_my_name(5, 6, [88, 90])
 	Traceback (most recent call last):
         ...
-	TypeError: add_integer() takes from 1 to 2 positional arguments but 3 were given
+	TypeError: say_my_name() takes from 1 to 2 positional arguments but 3 were given
