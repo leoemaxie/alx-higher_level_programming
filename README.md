@@ -23,3 +23,5 @@ A series of tasks and exercises aimed at understanding Python.
 * M0re Classes and Objects: A deeper dive to Object Oriented Programming in Python. This is housed in the [0x08-python-more_classes](/0x08-python-more_classes) directory.
 
 * Everything is Object: Theorectical questions to Object Oriented Programming in Python. This is housed in the [0x09-python-everything_is_object](/0x09-python-everything_is_object) directory.
+
+* Python Almost A Circle: Deeper dive into testing with python unittest library. This is housed in the [0x0C-python-almost_a_circle](/0x0C-python-almost_a_circle) directory.

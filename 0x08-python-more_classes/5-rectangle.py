@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
 Rectangle Module: Defines a Rectangle class with a private variable {width}
-{height}and various methods that works on them. Handles Exceptions.
+{height} and various methods that works on them. Handles Exceptions.
 """
 
 
