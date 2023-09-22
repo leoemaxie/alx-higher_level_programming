@@ -29,20 +29,20 @@ class Base:
         return "[]"
 
     """Returns the list of the JSON string representation json_string"""
-    @classmethod 
+    @classmethod
     def from_json_string(json_string):
         if json_string:
             return json.load(json_string)
         return []
 
     """Writes the JSON string representation of list_objs to a file"""
-    @classmethod 
+    @classmethod
     def save_to_file(cls, list_objs):
         with open(f"{cls.__name__}.json", 'w') as file:
             file.write(cls.to_json_string(list_objs))
 
     """Readsthe JSON string representation of list_objs to a file"""
-    @classmethod 
+    @classmethod
     def load_from_file(cls):
         try:
             with open(f"{cls.__name__}.json", 'r') as file:
