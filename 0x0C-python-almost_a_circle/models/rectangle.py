@@ -5,12 +5,14 @@ Rectangle Module: This module constains the Rectangle Class.
 from base import Base
 
 
-def throw_error(value, prop):
+def throw_error(value, prop, flag=None):
     """Throws an Exception."""
     if not isinstance(value, int):
         raise TypeError(f"{prop} must be an integer")
-    if value < 0:
+    if flag is not None and value < 0:
         raise ValueError(f"{prop} must be >= 0")
+    if flag is None and value <= 0:
+        raise ValueError(f"{prop} must be > 0")
 
 
 class Rectangle(Base):
@@ -23,15 +25,15 @@ class Rectangle(Base):
 
         throw_error(width, "width")
         throw_error(height, "height")
-        throw_error(x, "x")
-        throw_error(x, "y")
+        throw_error(x, "x", 1)
+        throw_error(y, "y", 1)
 
         self.__width = width
         self.__height = height
         self.__x = x
         self.__y = y
 
-    """{width} getter"""
+    """Gets the {width} property"""
     @property
     def width(self):
         return self.__width
@@ -42,7 +44,7 @@ class Rectangle(Base):
         throw_error(value, "width")
         self.__width = value
 
-    """Sets the {height} property"""
+    """Gets the {height} property"""
     @property
     def height(self):
         return self.__height
@@ -61,7 +63,7 @@ class Rectangle(Base):
     """Sets the {x} position  property"""
     @x.setter
     def x(self, value):
-        throw_error(value, "x")
+        throw_error(value, "x", 1)
         self.__x = value
 
     """Gets the {y} position property"""
@@ -72,14 +74,18 @@ class Rectangle(Base):
     """Sets the {y} position  property"""
     @y.setter
     def y(self, value):
-        throw_error(value, "y")
+        throw_error(value, "y", 1)
         self.__y = value
 
+    """Prints to stdout the square with the character #"""
     def display(self):
         for row in range(self.__height):
+            if self.__x > 0:
+                for pos in range(self.__y):
+                    print(" ", end="")
             for col in range(self.__width):
                 print("#", end="")
-            print("\n")
+            print()
 
     """Calculates the area of the Rectangle"""
     def area(self):
@@ -89,8 +95,30 @@ class Rectangle(Base):
     def __str__(self):
         return "[Rectangle] ({}) {}/{} - {}/{}".format(
             self.id,
-            self.__x
-            self.__y
-            self.__width
-            self.__y
+            self.__x,
+            self.__y,
+            self.__width,
+            self.__height
         )
+
+    """Updates the Rectangle class"""
+    def update(self, *args, **kwargs):
+        if len(args) > 5:
+            raise Exception("Too many arguments")
+        if not args:
+            for key, value in kwargs.items():
+                if hasattr(self, key):
+                    setattr(self, key, value)
+        else:
+            try:
+                self.id = args[0]
+                self.__width = args[1]
+                self.__height = args[2]
+                self.__x = args[3]
+                self.__y = args[4]
+            except IndexError:
+                pass
+
+    """Returns the dictionary representation of a rectangle"""
+    def to_dictionary(self):
+        return self.__dict__
