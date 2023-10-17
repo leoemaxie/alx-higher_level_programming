@@ -25,3 +25,6 @@ A series of tasks and exercises aimed at understanding Python.
 * Everything is Object: Theorectical questions to Object Oriented Programming in Python. This is housed in the [0x09-python-everything_is_object](/0x09-python-everything_is_object) directory.
 
 * Python Almost A Circle: Deeper dive into testing with python unittest library. This is housed in the [0x0C-python-almost_a_circle](/0x0C-python-almost_a_circle) directory.
+
+## SQL
+* SQL Introduction: An introduction to database querying with sql. This is housed in the [0x0D-SQL_introduction](/0x0D-SQL_introduction) directory.
