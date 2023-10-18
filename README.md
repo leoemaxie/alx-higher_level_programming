@@ -3,7 +3,7 @@
 ## Overview
 A series of tasks and exercises aimed at understanding Python.
 
-## Structure.
+## Structure
 * Hello World: Tasks aimed at having a deep introduction to Python. This is housed in the [0x00-python-hello_world](/0x00-python-hello_world) directory.
 
 * If/else, Loops, Functions: An introduction to Python condituonals, loops and functions. This is housed in the [0x01-python-if_else_loops_functions](/0x01-python-if_else_loops_functions) directory.
@@ -28,3 +28,5 @@ A series of tasks and exercises aimed at understanding Python.
 
 ## SQL
 * SQL Introduction: An introduction to database querying with sql. This is housed in the [0x0D-SQL_introduction](/0x0D-SQL_introduction) directory.
+
+* SQL More Queries: A deeper dive querying database with sql. This is housed in the [0x0E-SQL_more_queries](/0x0E-SQL_more_queries) directory.
