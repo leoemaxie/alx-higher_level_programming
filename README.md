@@ -30,3 +30,8 @@ A series of tasks and exercises aimed at understanding Python.
 * SQL Introduction: An introduction to database querying with sql. This is housed in the [0x0D-SQL_introduction](/0x0D-SQL_introduction) directory.
 
 * SQL More Queries: A deeper dive querying database with sql. This is housed in the [0x0E-SQL_more_queries](/0x0E-SQL_more_queries) directory.
+
+## Javascript
+* Javascript Warm Up: An introduction to Javascript. This is housed in the [0x12-javascript-warm_up](/0x12-javascript-warm_up) directory.
+
+* Javascript Objects, Scopes, Closures: Advanced Javascript features to create powerful program. This is housed in the [0x13-javascript_objects_scopes_closures](/0x13-javascript_objects_scopes_closures) directory.
