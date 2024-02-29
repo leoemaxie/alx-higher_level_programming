@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 if __name__ == "__main__":
     """lists all cities by state from the database hbtn_0e_4_usa"""
     from sys import argv
