@@ -30,6 +30,10 @@ A series of tasks and exercises aimed at understanding Python.
 
 -   Python Object Relational Mapping: Mapping SQL queries into Python object. This is housed in the [0x0F-python-object_relational_mapping](/0x0F-python-object_relational_mapping) directory.
 
+-   Network #0: Networking in Python part 1. This is housed in the [0x11-python-network_0](/0x11-python-network_0) directory.
+
+-   Network #1: Networking in Python part 2. This is housed in the [0x11-python-network_1](/0x11-python-network_1) directory.
+
 ## SQL
 
 -   SQL Introduction: An introduction to database querying with sql. This is housed in the [0x0D-SQL_introduction](/0x0D-SQL_introduction) directory.
