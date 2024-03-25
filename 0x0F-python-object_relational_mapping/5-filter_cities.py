@@ -1,6 +1,7 @@
 #!/usr/bin/python3
+"""lists all cities by state from the database hbtn_0e_4_usa"""
+
 if __name__ == "__main__":
-    """lists all cities by state from the database hbtn_0e_4_usa"""
     from sys import argv
     from sqlalchemy import create_engine
     from sqlalchemy.orm import sessionmaker
@@ -22,3 +23,4 @@ if __name__ == "__main__":
             print("    {}: {}".format(city.id, city.name))
     # Close the session
     session.close()
+

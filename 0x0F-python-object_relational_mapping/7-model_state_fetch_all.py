@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+"""Fetches cities"""
+
 if __name__ == "__main__":
     from sqlalchemy import create_engine
     from sqlalchemy.orm import sessionmaker
